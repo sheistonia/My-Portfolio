@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #faf7ff;
+  color: #2e2233;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  padding: 80px 20px;
+  color: white;
+}
+
+/* HERO CONTAINER */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* LEFT TEXT */
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: white;
+  color: #7b2cbf;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #f3e6ff;
+}
+
+/* RIGHT IMAGE */
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 25px;
+  border: 5px solid white;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* SECTIONS */
+.section {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.section h2 {
+  color: #7b2cbf;
+  margin-bottom: 15px;
+}
+
+/* ABOUT */
+.about {
+  background: white;
+}
+
+.about p {
+  max-width: 650px;
+  margin: auto;
+}
+
+/* PROJECTS */
+.projects {
+  background: #f3e6ff;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  color: #7b2cbf;
+  margin-bottom: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #6a0dad;
+  font-weight: 600;
+}
+
+/* FOOTER */
+.footer {
+  background: #2e2233;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-bottom: 20px;
+  }
+}
