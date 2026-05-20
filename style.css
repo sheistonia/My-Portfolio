@@ -147,6 +147,10 @@ body {
   padding: 50px 20px;
 }
 
+.footer p {
+  margin: 0;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
   .hero-container {
